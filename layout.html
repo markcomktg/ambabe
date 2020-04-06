@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambabe Page</title>
+    <title>META setting</title>
+    <meta http-equiv='content-type'content='text/html;charset=utf-8'/>
+    <style>
+      .red{color:red;}
+      .bold{font-weight:bold;}
+      .menu li {background:green; display:inline;font-size:20px;}
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size:20px;"> Ambabe </h1>
+      <div style= "background:green;">
+          <ul class='menu'>
+            <li><span style="color:green;">________________________________________________________________________________________________________________</span></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><span style="color:green">__</span></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+          </ul>
+      </div>
+    </header>
+
+      {%block content%}
+      {%endblock%}
+    </body>
+</html>
